@@ -60,6 +60,7 @@ Socket  <%= @socket %>
 Umask   <%= @umask %>
 
 # This specifies a file in which to store DKIM transaction statistics.
+# OpenDKIM must be manually compiled with --enable-stats to enable this feature.
 <%- if @use_statistics == true -%>
 Statistics              <%= @statistics %>
 <%- else -%>
