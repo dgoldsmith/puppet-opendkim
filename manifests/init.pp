@@ -23,6 +23,8 @@ class opendkim(
   String                    $umask                = $opendkim::params::umask,
   Boolean                   $use_statistics       = $opendkim::params::use_statistics,
   Stdlib::Absolutepath      $statistics           = $opendkim::params::statistics,
+  Boolean                   $send_reports         = $opendkim::params::send_reports,
+  String                    $report_address       = $opendkim::params::report_address,
   Optional[String]          $nameservers          = $opendkim::params::nameservers,
   Array[String]             $trusted_hosts        = $opendkim::params::trusted_hosts,
   String                    $mode                 = $opendkim::params::mode,

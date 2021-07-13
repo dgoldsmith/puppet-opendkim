@@ -17,6 +17,8 @@ class opendkim::params {
   $umask = '0022'
   $use_statistics = false
   $statistics = '/var/spool/opendkim/stats.dat'
+  $send_reports = false
+  $reports_address = undef
   $trusted_hosts = ['::1', '127.0.0.1', 'localhost']
   $maximum_signed_bytes = undef
   $trustanchorfile  = undef

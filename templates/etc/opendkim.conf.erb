@@ -67,6 +67,19 @@ Statistics              <%= @statistics %>
 #Statistics              <%= @statistics %>
 <%- end -%>
 
+# Specifies whether or not the filter should generate report mail back
+# to senders when verification fails and an address for such a purpose
+# is provided. See opendkim.conf(5) for details.
+<%- if @send_reports == true -%>
+SendReports	yes
+
+# Specifies the sending address to be used on From: headers of outgoing
+# failure reports.  By default, the e-mail address of the user executing
+# the filter is used (executing_user@hostname).
+# ReportAddress	"Example.com Postmaster" <postmaster@example.com>
+ReportAddress   <%= @report_address %>
+
+<%- end -%>
 ## SIGNING OPTIONS
 
 # Selects the canonicalization method(s) to be used when signing messages.

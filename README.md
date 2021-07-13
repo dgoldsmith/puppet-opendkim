@@ -110,6 +110,8 @@ configuration file.
 ##### `umask`
 ##### `use_statistics`
 ##### `statistics`
+##### `send_reports`
+##### `report_address`
 ##### `user`
 ##### `syslog`
 ##### `syslog_success`
