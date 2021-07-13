@@ -19,7 +19,7 @@ class opendkim::params {
   $statistics = '/var/spool/opendkim/stats.dat'
   $send_reports = false
   $report_address = undef
-  $softare_header = 'yes'
+  $software_header = 'yes'
   $trusted_hosts = ['::1', '127.0.0.1', 'localhost']
   $maximum_signed_bytes = undef
   $trustanchorfile  = undef
