@@ -8,6 +8,8 @@ class opendkim::params {
 
   $package_name = 'opendkim'
 
+  $syslog = 'yes'
+  $syslog_success = 'yes'
   $log_why = 'no'
   $canonicalization = 'relaxed/simple'
   $subdomains = 'yes'

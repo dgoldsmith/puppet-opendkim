@@ -15,6 +15,8 @@ class opendkim(
   Stdlib::Absolutepath      $pidfile              = $opendkim::params::pidfile,
   Optional[Stdlib::Absolutepath] $sysconfigfile   = $opendkim::params::sysconfigfile,
   String                    $package_name         = $opendkim::params::package_name,
+  String                    $syslog               = $opendkim::params::syslog,
+  String                    $syslog_success       = $opendkim::params::syslog_success,
   String                    $log_why              = $opendkim::params::log_why,
   String                    $subdomains           = $opendkim::params::subdomains,
   String                    $socket               = $opendkim::params::socket,

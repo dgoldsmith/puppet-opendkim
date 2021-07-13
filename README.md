@@ -109,6 +109,8 @@ configuration file.
 ##### `uid`
 ##### `umask`
 ##### `user`
+##### `syslog`
+##### `syslog_success`
 ##### `log_why`
 ##### `package_name`
 ##### `service_ensure`

@@ -1,5 +1,37 @@
 # THIS FILE IS MANAGED BY PUPPET
 
+## BASIC OPENDKIM CONFIGURATION FILE
+## See opendkim.conf(5) or /usr/share/doc/opendkim/opendkim.conf.sample for more
+
+## BEFORE running OpenDKIM you must:
+
+## - make your MTA (Postfix, Sendmail, etc.) aware of OpenDKIM
+## - generate keys for your domain (if signing)
+## - edit your DNS records to publish your public keys (if signing)
+
+## See /usr/share/doc/opendkim/INSTALL for detailed instructions.
+
+## DEPRECATED CONFIGURATION OPTIONS
+##
+## The following configuration options are no longer valid.  They should be
+## removed from your existing configuration file to prevent potential issues.
+## Failure to do so may result in opendkim being unable to start.
+##
+## Removed in 2.10.0:
+##   AddAllSignatureResults
+##   ADSPAction
+##   ADSPNoSuchDomain
+##   BogusPolicy
+##   DisableADSP
+##   LDAPSoftStart
+##   LocalADSP
+##   NoDiscardableMailTo
+##   On-PolicyError
+##   SendADSPReports
+##   UnprotectedPolicy
+
+## CONFIGURATION OPTIONS
+
 # Specifies the path to the process ID file.
 PidFile <%= @pidfile %>
 
@@ -7,10 +39,10 @@ PidFile <%= @pidfile %>
 Mode <%= @mode %>
 
 # Log activity to the system log.
-Syslog  yes
+Syslog  <%= @syslog %>
 
 # Log additional entries indicating successful signing or verification of messages.
-SyslogSuccess yes
+SyslogSuccess <%= @syslog_success %>
 
 # If logging is enabled, include detailed logging about why or why not a message was
 # signed or verified. This causes a large increase in the amount of log data generated
