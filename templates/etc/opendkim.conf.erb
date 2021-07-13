@@ -80,6 +80,10 @@ SendReports	yes
 ReportAddress   <%= @report_address %>
 
 <%- end -%>
+# Add a DKIM-Filter header field to messages passing through this filter
+# to identify messages it has processed.
+SoftwareHeader	<%= @software_header %>
+
 ## SIGNING OPTIONS
 
 # Selects the canonicalization method(s) to be used when signing messages.

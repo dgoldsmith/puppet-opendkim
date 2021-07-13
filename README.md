@@ -112,6 +112,7 @@ configuration file.
 ##### `statistics`
 ##### `send_reports`
 ##### `report_address`
+##### `software_header`
 ##### `user`
 ##### `syslog`
 ##### `syslog_success`
