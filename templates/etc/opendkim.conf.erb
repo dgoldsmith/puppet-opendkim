@@ -59,9 +59,11 @@ Socket  <%= @socket %>
 # privileged user (e.g. Postfix)
 Umask   <%= @umask %>
 
+<%- if $use_statistics == true -%>
 # This specifies a file in which to store DKIM transaction statistics.
-#Statistics              /var/spool/opendkim/stats.dat
+Statistics              <%= @statistics %>
 
+<%- end -%>
 ## SIGNING OPTIONS
 
 # Selects the canonicalization method(s) to be used when signing messages.

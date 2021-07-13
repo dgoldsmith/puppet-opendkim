@@ -15,6 +15,8 @@ class opendkim::params {
   $subdomains = 'yes'
   $socket = 'inet:8891@127.0.0.1'
   $umask = '0022'
+  $use_statistics = false
+  $statistics = '/var/spool/opendkim/stats.dat'
   $trusted_hosts = ['::1', '127.0.0.1', 'localhost']
   $maximum_signed_bytes = undef
   $trustanchorfile  = undef

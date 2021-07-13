@@ -21,6 +21,8 @@ class opendkim(
   String                    $subdomains           = $opendkim::params::subdomains,
   String                    $socket               = $opendkim::params::socket,
   String                    $umask                = $opendkim::params::umask,
+  Boolean                   $use_statistics       = $opendkim::params::use_statistics,
+  Stdlib::Absolutepath      $statistics           = $opendkim::params::statistics,
   Optional[String]          $nameservers          = $opendkim::params::nameservers,
   Array[String]             $trusted_hosts        = $opendkim::params::trusted_hosts,
   String                    $mode                 = $opendkim::params::mode,

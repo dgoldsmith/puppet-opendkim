@@ -108,6 +108,8 @@ configuration file.
 ##### `homedir`
 ##### `uid`
 ##### `umask`
+##### `use_statistics`
+##### `statistics`
 ##### `user`
 ##### `syslog`
 ##### `syslog_success`
