@@ -94,7 +94,6 @@ Canonicalization        <%= @canonicalization %>
 # This parameter is not required if a SigningTable is in use.
 #Domain                  test.fr
 <% if @domains and ! @domains.empty? -%>
-
   <%- Array(@domains).each do |domain| -%>
 Domain <%= domain %>
   <%- end -%>
