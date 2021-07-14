@@ -136,6 +136,7 @@ configuration file.
 ##### `removeoldsignatures`
 ##### `maximum_signed_bytes`
 ##### `trustanchorfile`
+##### `querycache`
 
 ## Limitations
 

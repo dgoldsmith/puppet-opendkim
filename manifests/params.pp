@@ -29,6 +29,7 @@ class opendkim::params {
   $use_keyfile = false
   $keyfile = '/etc/opendkim/keys/default.private'
   $trustanchorfile  = undef
+  $querycache  = 'no'
   $manage_private_keys = true
 
   $keys = []

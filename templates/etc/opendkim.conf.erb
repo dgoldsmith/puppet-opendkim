@@ -165,3 +165,10 @@ MaximumSignedBytes <%= @maximum_signed_bytes %>
 <% if @trustanchorfile -%>
 TrustAnchorFile         <%= @trustanchorfile %>
 <% end -%>
+
+# Instructs the DKIM library to maintain its own local cache of keys and
+# policies retrieved from DNS, rather than relying on the nameserver for
+# caching service. Useful if the nameserver being used by the filter is
+# not local.
+QueryCache              <%= querycache %>
+
