@@ -33,6 +33,7 @@ class opendkim(
   Array[String]             $domains              = $opendkim::params::domains,
   Boolean                   $use_selector         = $opendkim::params::use_selector,
   String                    $selector             = $opendkim::params::selector,
+  Optional[Integer]         $minimum_key_bits     = $opendkim::params::minimum_key_bits,
   String                    $removeoldsignatures  = $opendkim::params::removeoldsignatures,
   Optional[Integer]         $maximum_signed_bytes = $opendkim::params::maximum_signed_bytes,
   Optional[String]          $trustanchorfile      = $opendkim::params::trustanchorfile,

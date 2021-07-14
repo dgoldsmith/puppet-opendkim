@@ -130,6 +130,7 @@ configuration file.
 ##### `domains`
 ##### `use_selector`
 ##### `selector`
+##### `minimum_key_bits`
 ##### `removeoldsignatures`
 ##### `maximum_signed_bytes`
 ##### `trustanchorfile`

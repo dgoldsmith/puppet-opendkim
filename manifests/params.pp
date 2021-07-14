@@ -15,6 +15,7 @@ class opendkim::params {
   $domains = []
   $use_selector = false
   $selector = 'default'
+  $minimum_key_bits = 1024
   $subdomains = 'yes'
   $socket = 'inet:8891@127.0.0.1'
   $umask = '0022'
