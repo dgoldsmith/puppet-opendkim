@@ -131,6 +131,8 @@ configuration file.
 ##### `use_selector`
 ##### `selector`
 ##### `minimum_key_bits`
+##### `use_keyfile`
+##### `keyfile`
 ##### `removeoldsignatures`
 ##### `maximum_signed_bytes`
 ##### `trustanchorfile`

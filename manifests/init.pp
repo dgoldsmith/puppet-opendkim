@@ -34,6 +34,8 @@ class opendkim(
   Boolean                   $use_selector         = $opendkim::params::use_selector,
   String                    $selector             = $opendkim::params::selector,
   Integer                   $minimum_key_bits     = $opendkim::params::minimum_key_bits,
+  Boolean                   $use_keyfile          = $opendkim::params::use_keyfile,
+  Stdlib::Absolutepath      $keyfile              = $opendkim::params::keyfile,
   String                    $removeoldsignatures  = $opendkim::params::removeoldsignatures,
   Optional[Integer]         $maximum_signed_bytes = $opendkim::params::maximum_signed_bytes,
   Optional[String]          $trustanchorfile      = $opendkim::params::trustanchorfile,

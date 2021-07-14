@@ -26,6 +26,8 @@ class opendkim::params {
   $software_header = 'yes'
   $trusted_hosts = ['::1', '127.0.0.1', 'localhost']
   $maximum_signed_bytes = undef
+  $use_keyfile = false
+  $keyfile = '/etc/opendkim/keys/default.private'
   $trustanchorfile  = undef
   $manage_private_keys = true
 
