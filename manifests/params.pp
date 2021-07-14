@@ -12,6 +12,7 @@ class opendkim::params {
   $syslog_success = 'yes'
   $log_why = 'no'
   $canonicalization = 'relaxed/simple'
+  $domains = []
   $subdomains = 'yes'
   $socket = 'inet:8891@127.0.0.1'
   $umask = '0022'

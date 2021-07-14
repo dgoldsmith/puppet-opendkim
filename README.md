@@ -127,6 +127,7 @@ configuration file.
 ##### `trusted_hosts`
 ##### `mode`
 ##### `canonicalization`
+##### `domains`
 ##### `removeoldsignatures`
 ##### `maximum_signed_bytes`
 ##### `trustanchorfile`

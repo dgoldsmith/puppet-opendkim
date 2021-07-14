@@ -93,6 +93,12 @@ Canonicalization        <%= @canonicalization %>
 # be verified rather than being signed. Uncomment and use your domain name.
 # This parameter is not required if a SigningTable is in use.
 #Domain                  test.fr
+<% if @domains and ! @domains.empty? -%>
+
+  <%- Array(@domains).each do |domain| -%>
+Domain <%= domain %>
+  <%- end -%>
+<% end -%>
 
 # Defines the name of the selector to be used when signing messages.
 #Selector                default
