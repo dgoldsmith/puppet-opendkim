@@ -128,6 +128,8 @@ configuration file.
 ##### `mode`
 ##### `canonicalization`
 ##### `domains`
+##### `use_selector`
+##### `selector`
 ##### `removeoldsignatures`
 ##### `maximum_signed_bytes`
 ##### `trustanchorfile`

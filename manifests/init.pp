@@ -31,6 +31,8 @@ class opendkim(
   String                    $mode                 = $opendkim::params::mode,
   String                    $canonicalization     = $opendkim::params::canonicalization,
   Array[String]             $domains              = $opendkim::params::domains,
+  Boolean                   $use_selector         = $opendkim::params::use_selector,
+  String                    $selector             = $opendkim::params::selector,
   String                    $removeoldsignatures  = $opendkim::params::removeoldsignatures,
   Optional[Integer]         $maximum_signed_bytes = $opendkim::params::maximum_signed_bytes,
   Optional[String]          $trustanchorfile      = $opendkim::params::trustanchorfile,

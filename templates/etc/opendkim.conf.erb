@@ -101,6 +101,9 @@ Domain <%= domain %>
 
 # Defines the name of the selector to be used when signing messages.
 #Selector                default
+<%- if @use_selector == true -%>
+Selector              <%= @selector %>
+<%- end -%>
 
 # Gives the location of a private key to be used for signing ALL messages.
 #KeyFile                 /etc/opendkim/keys/default.private
