@@ -14,7 +14,7 @@ class opendkim::params {
   $canonicalization = 'relaxed/simple'
   $domains = []
   $use_selector = false
-  $selector = undef
+  $selector = 'default'
   $subdomains = 'yes'
   $socket = 'inet:8891@127.0.0.1'
   $umask = '0022'
